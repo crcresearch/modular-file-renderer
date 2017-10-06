@@ -1,4 +1,4 @@
-import os
+import os, re
 
 import chardet
 from humanfriendly import format_size
@@ -40,6 +40,7 @@ class CodePygmentsRenderer(extension.BaseRenderer):
 
         with open(self.file_path, 'rb') as fp:
             body = self._render_html(fp, self.metadata.ext)
+            #self.assets_url = re.sub(r'assets', 'mfr/assets', self.assets_url)
             return self.TEMPLATE.render(base=self.assets_url, body=body)
 
     @property

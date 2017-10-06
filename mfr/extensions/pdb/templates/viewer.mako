@@ -1,12 +1,12 @@
 <div id="mfrViewer"></div>
 
-<script src="/static/js/mfr.js"></script>
-<script src="/static/js/mfr.child.js"></script>
+<script src="static/js/mfr.js"></script>
+<script src="static/js/mfr.child.js"></script>
 <script>
     window.pymChild.sendMessage('embed', 'embed-responsive-16by9');
 </script>
 
-<script src="/static/js/jquery-1.11.3.min.js"></script>
+<script src="static/js/jquery-1.11.3.min.js"></script>
 <script src="${base}/js/gl-matrix.js"></script>
 <script src="${base}/js/core.js"></script>
 <script src="${base}/js/geom.js"></script>

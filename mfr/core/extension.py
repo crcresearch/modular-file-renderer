@@ -1,4 +1,4 @@
-import abc
+import abc, re
 
 from mfr.core.metrics import MetricsRecord
 
@@ -38,8 +38,8 @@ class BaseRenderer(metaclass=abc.ABCMeta):
         self.metadata = metadata
         self.file_path = file_path
         self.url = url
-        self.assets_url = '{}/{}'.format(assets_url, self._get_module_name())
-        self.export_url = export_url
+        self.assets_url = re.sub(r'assets', 'mfr/assets', '{}/{}'.format(assets_url, self._get_module_name()))
+        self.export_url = re.sub(r'export', 'mfr/export', export_url)
         self.renderer_metrics = MetricsRecord('renderer')
         if self._get_module_name():
             self.metrics = self.renderer_metrics.new_subrecord(self._get_module_name())
