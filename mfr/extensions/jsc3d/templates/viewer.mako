@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
 <style type="text/css">
     .popover {
         max-width: 100%;
     }
 </style>
-<script src="/static/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-<script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="static/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="static/js/bootstrap.min.js" type="text/javascript"></script>
 
 <canvas id="mfrViewer" tabindex="-1"></canvas>
 <a style="position: absolute; top: 10px; right: 10px; cursor: pointer;"
@@ -16,8 +16,8 @@
    <img src="${base}/images/question-circle.png">
 </a>
 
-<script src="/static/js/mfr.js"></script>
-<script src="/static/js/mfr.child.js"></script>
+<script src="static/js/mfr.js"></script>
+<script src="static/js/mfr.child.js"></script>
 
 <!--[if !IE]><!-->
 <script type="text/javascript" src="${base}/js/jsc3d.js"></script>

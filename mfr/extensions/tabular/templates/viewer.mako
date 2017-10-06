@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<script src="/static/js/jquery-1.11.3.min.js"></script>
+<script src="static/js/jquery-1.11.3.min.js"></script>
 <script src="${base}/js/bootstrap.min.js"></script>
 <script src="${base}/js/jquery.event.drag-2.2.js"></script>
 <script src="${base}/js/slick.core.js"></script>
@@ -156,5 +156,5 @@
     });
 </script>
 
-<script src="/static/js/mfr.js"></script>
-<script src="/static/js/mfr.child.js"></script>
+<script src="static/js/mfr.js"></script>
+<script src="static/js/mfr.child.js"></script>
